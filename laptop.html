@@ -1,0 +1,243 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header {
+        background-color: rgb(230, 7, 7);
+        text-align: center;
+    }
+    ul{
+        list-style: none;
+    }
+    .container { max-width: 1200px;
+    margin: auto;}
+    a {
+        text-decoration: cornflowerblue;
+        text-align: center;
+    }
+    /*------------------------------------*/
+    
+    nav {
+        background-color: rgb(247, 107, 7);
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav ul li, a{
+        color:black;
+        font-size: 20px;
+    }
+    nav ul li :nth-child(2) a {
+        color: darkgoldenrod;
+    }
+    nav ul li:nth-child(2) i {
+        color: rgb(223, 7, 7);
+        font-size: 20px;
+        margin-left: 6px;
+    }
+    nav ul li:nth-child(3) {
+        position: relative;
+    }
+    nav ul li:nth-child(3) input {
+        height: 30px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        padding-left: 20px;
+    }
+    nav ul li:nth-child(3) i {
+        position: absolute;
+        font-size: 15px;
+        right: 12px;
+        color: red;
+        line-height: 30px;
+    }
+    nav ul li:nth-child(4) button {
+        height: 30px;
+        padding: 0 8px;
+        cursor: pointer;
+        background-color: rgb(231, 91, 91);
+        color: black;
+        border: 1px solid ;
+    }
+    nav ul li:nth-child(5) {
+        text-align: center;
+    }
+    nav ul li:nth-child(5):hover {
+        color: darkblue;
+    }
+    nav ul li:nth-child(6):hover {
+        color: blue;
+    }
+    nav ul li:nth-child(7):hover {
+        color: blue;
+    }
+    nav ul li:nth-child(8):hover {
+        color: blue;
+    }
+    nav ul li:nth-child(9):hover {
+        color: blue;
+    }
+    .menu-bar{
+        background-color: rgb(250, 225, 3);
+    }
+    .menu-bar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-bar ul li a {
+        color: rgb(0, 0, 0);
+         font-size: 16px;
+    }
+    .menu-bar ul li a i {
+        margin-right: 6px;
+    }
+    
+    
+
+    
+    
+    /*---------fornm---*/
+    
+    
+    .adress-form-content {
+        width: 400px;
+        height: 450px;
+        background-color: rgb(211, 122, 6);
+        border-radius: 5px;
+    
+    }
+    h6 { 
+        display: block;
+        position: absolute;
+        height: 20px;
+        padding: 0 6px;
+        border: 1px solid #ddd;
+        right: 12px;
+        cursor: pointer;
+        top:20%;
+        transform: translateY(-50);
+    
+    }
+    
+   
+    section {
+        background-color: rgb(233, 158, 18);
+        width: 100%;
+    }
+    /*------submenu---*/
+    
+    </style>
+ 
+    
+    
+    <html lang="en">
+            <head>
+                    <meta charset="UTF-8">   
+                    <meta http-equiv="X-UA-Compatable" content="IE-edeg">
+                    <meta name="viewport"content="width-device-width, initial-scale-1.0">
+                   
+                   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+                 
+                    <title>Hanggiadung.com </title>   
+            </head> 
+            <body>
+                 <header>
+                  <img src="../asm/hinhanh/banner.jpg">
+                 </header>
+                 <nav>
+                     <div class="container">
+                     <ul>
+                         <li><a href=""><img style="width:150px;" src="../asm/hinhanh/logo.png" alt=""></a></li>
+                         <li ><a href="#">HCM <i class="fa-solid fa-arrow-down"></i></a></li>
+                         <div class="adress-form">
+                             <div calss="adress-form-content">
+                                 <form action="">
+                                     <p><h1>địa chỉ<h1></p>
+                                     <select name=""id="">
+                                         <option valua="#">--chọn địa điểm--</option>
+                                         <option valua="#">HCM</option>
+                                     </select>
+                                     
+                                 </form>
+                                 <button>Xác nhận</button>
+                             </div>
+                         </div>
+                         <li><input style="height: 30px;
+                            width: auto;
+                            border-radius: 5px;
+                            border: none;
+                            padding-left: 6px;
+                            outline: none;" type="text" placeholder="tìm kiếm sản phẨM"><i class="fa-solid fa-magnifying-glass"></i></li>
+                         <li><a href=""></a><button><i class="fa-solid fa-cart-shopping"></i>giỏi hàng</button></li>
+                         <li><a href="../asm/index.html">Trang chủ</a>
+                         <li><a style="background-color: chartreuse;" href="../asm/dangnhap.html">Đăng nhập</a>
+                            <li><a style="background-color: chartreuse;" href="../asm/dangky.html">Đăng ký</a>
+                         <li><a href=""></a>game</li>
+                     </ul>
+                     </div>
+                 </nav>
+                 <section class="menu-bar">
+                     <div class="container">
+                     <div class="menu-bar-content">
+                         <ul>
+                             <li><a href="../asm/demodienthoai.html"><i class="fa-solid fa-mobile-screen-button"></i>Điện thoại</a></li>
+                             <li><a href="../asm/laptop.html"><i class="fa-solid fa-laptop"></i></a>Laptop</li>
+                             <li><a href=""><i class="fa-solid fa-tablet"></i></a>Tablet</li>
+                             <li><a href=""><i class="fa-solid fa-headphones-simple"></i>Phụ kiện<i class="fa-solid fa-arrow-down"></i></a></li>
+                             <div class="submenu">
+                                 
+                             </div>
+                             <li><a href=""><i class="fa-solid fa-stopwatch"></i></i></a>Đồnghồ </li>
+                             <li><a href=""><i class="fa-solid fa-watch-smart"></i></a>Đồng hồ</li>
+                             <li><a href=""><i class="fa-solid fa-gem"></i></a>Trag sức</li>
+                             <li><a href=""><i class="fa-solid fa-desktop"></i></a>Máy tính<i class="fa-solid fa-arrow-down"></i></li>
+                             <li><a href=""></a>máy cũ</li>
+                             <li><a href=""></a>SIM THẺ </li>
+                             <li><a href="">></a>ĐIỆN</li>
+    
+                         </ul>
+    
+                     </div>
+                     </div>
+    
+                 </section>
+    
+                 <!-------slider-->
+                 <section class="slider">
+                     <div calss="container"></div>
+                      <div class="slider-containar"></div>
+                      <img style="width:100%;" src="../asm/hinhanh/banner3.jpg">
+                     <center> <table widthwidth = 1000 align = center >
+                        <tr>
+                            <td><a href=""></a><img src ="hinhanh/laptop1.jpg"width = 300 ></td>
+                            <td><img src ="hinhanh/laptop2.jpg"width = 300 ></td>
+                            <td><img src ="hinhanh/laptop3.jpg"width = 300 ></td>
+                        </tr>
+                        <tr>
+                            <td><marquee scrollamount="2" scrolldelay="3" style="height: 20px; width: 200px;">
+                                <span style="color: rgb(255, 0, 170); font-size: 20px;">Laptop gaming</span>
+                                </marquee></td>
+                            <td><marquee scrollamount="2" scrolldelay="3" style="height: 20px; width: 200px;">
+                                <span style="color: rgb(255, 0, 170); font-size: 20px;">Laptopdell</span>
+                                </marquee></td>
+                            <td><marquee scrollamount="2" scrolldelay="3" style="height: 20px; width: 200px;">
+                                <span style="color: rgb(255, 0, 170); font-size: 20px;">mac</span>
+                                </marquee></td>
+                        </tr>
+                        <tr>
+                            <td>50.000.000VNĐ <a href="laptopchitiet.html"> <button>Mua</button></td>
+                            <td>62.000.000VNĐ<a href=""><button>Mua</button></a></td>
+                            <td>40.000.000VNĐ<a href="Mua"><button>Mua</button></a></td>
+                        </tr>
+                    </table></center>
+                
+            </body>
+    </html>  
+    
